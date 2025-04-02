@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+    const mobileImage = document.getElementById("mobile-image");
+
     const title = document.getElementById("title");
     const texts = document.querySelectorAll(".text");
     const substances = document.querySelectorAll(".substance");
@@ -35,8 +37,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         document.getElementById("success-container").style.display = "none";
         document.getElementById("card-container").style.display= "block";
-        document.getElementById("mobile-image").style.display = "block";
-
+        if(window.innerWidth <= 600){
+            document.getElementById("mobile-image").style.display = "block";
+        }
         email.value = '';
     });
 
