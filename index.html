@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@500&family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <title>Sign Up Form</title>
+    </head>
+    <body>
+      <div class="card-container" id="card-container" style="display: block;">
+        <div class="title-container">
+        <div class="title" id="title">
+          <h1>Stay updated!</h1>
+        </div>
+      </div>
+      <div class="text-container">
+        <div class="text" id="text">
+          <p>Join 60,000+ product managers receiving monthly<br>updates on:</p>
+        </div>
+      </div>
+      <div class="substance-container">
+        <div class="substance" id="substance">
+          <label for="substance" class="label-substance">
+            <img class="icon-success" src="assets/images/icon-success.svg">
+            Product discovery and building what matters</label>
+        </div>
+        <div class="substance" id="substance">
+          <label for="substance" class="label-substance">
+            <img class="icon-success" src="assets/images/icon-success.svg">
+            Measuring to ensure updates are a success</label>
+        </div>
+        <div class="substance" id="substance">
+          <label for="substance" class="label-substance">
+            <img class="icon-success" src="assets/images/icon-success.svg">
+            And much more!</label>
+        </div>
+      </div>
+      <div class="email-container">
+        <p class="email-address">Email address</p>
+        <input type="email" id="email" class="required" placeholder="email@company.com">
+      </div>
+      <div class="submit-container">
+        <button type="submit">Subscribe to monthly newsletter</button>
+      </div>
+      <div class="illustration">
+        <img class="desktop-image" src="assets/images/illustration-sign-up-desktop.svg">
+      </div>
+      <div class="error-container">
+        <p class="error">Valid email required</p>
+      </div>
+      </div>
+      <div class="success-container" id="success-container" style="display: none;">
+        <img src="assets/images/icon-success.svg">
+        <h1 class="title2">Thanks for<br>subscribing!</h1>
+        <p class="text2">A confirmation email has been sent to<br><span class="ash">ash@loremcompany.com.</span> Please open it and click<br>the button inside to confirm your subscription.</p>
+        <button class="btn-secondary">Dismiss message</button>
+      </div>
+      <img class="mobile-image" id="mobile-image" src="assets/images/illustration-sign-up-mobile.svg">
+      <script src="script.js"></script>
+    </body>
+</html>

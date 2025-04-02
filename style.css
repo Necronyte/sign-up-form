@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --red: hsl(4, 100%, 67%);
+    
+    --blue-800: hsl(234, 29%, 20%);
+    --blue-700: hsl(235, 18%, 26%);
+    --grey: hsl(0, 0%,58%);
+}
+
+.label-substance .icon-success{
+    width: 20px;
+}
+
+body{
+    background-color: var(--blue-700);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.card-container{
+    position: absolute;
+    top: 5%;
+    padding: 120px;
+    width: 1000px;
+    height: 630px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.title-container .title{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--blue-800);
+    font-size: 20px;
+}
+
+.text-container .text{
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 13px;
+    color: var(--blue-700);
+    margin-top: 20px;
+}
+
+.substance-container{
+    margin-top: 20px;
+}
+
+.substance-container .substance{
+    margin-top: 5px;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 13px;
+    color: var(--blue-700);
+}
+
+.email-container{
+    margin-top: 20px;
+}
+
+.email-container .email-address{
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 11px;
+    color: var(--blue-800);
+}
+
+.required{
+    margin-top: 5px;
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--grey);
+}
+
+input::placeholder{
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 11px;
+    padding-left: 10px;
+}
+
+button{
+    margin-top: 20px;
+    width: 50%;
+    height: 40px;
+    color: white;
+    background-color: var(--blue-800);
+    border-radius: 10px;
+    border: none;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.illustration{
+    position: absolute;
+    left: 550px;
+    top: 20px;
+}
+
+button:hover{
+    background-color: var(--red);
+}
+
+.success-container{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border-radius: 30px;
+    top: 15%;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    padding: 40px;
+}
+
+.success-container .title2{
+    margin-top: 15px;
+    color: var(--blue-800);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.success-container .text2{
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 13px;
+    color: var(--blue-700);
+    margin-top: 20px;
+}
+
+.ash{
+    color: var(--blue-800);
+    font-family: "Inter", sans-serif;
+}
+
+.btn-secondary{
+    width: 100%;
+}
+
+.error-container .error{
+    margin-left: 280px;
+    margin-top: -120px;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 11px;
+    color: var(--red);
+    display: none;
+}
+
+input.error{
+    border: 1px solid var(--red);
+    background-color: hsl(0, 100%, 90%);
+}
+
+input.error::placeholder{
+    color: var(--red);
+}
+
+.mobile-image{
+    display: none;
+}
+
+@media (max-width: 600px){
+    .card-container {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column-reverse;
+        box-shadow: none;
+        position: absolute;
+        top: 60%;
+        
+    }
+
+    .required,
+    button {
+        width: 70%;
+    }
+
+    .mobile-image{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .desktop-image{
+        display: none;
+    }
+
+    body{
+        background-color: white;
+    }
+
+    .success-container{
+        box-shadow: none;
+    }
+}
